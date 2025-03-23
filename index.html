@@ -1,49 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
       <div class="sidebar">
-        <div class="super">
-          <img class="svg-icon" src="assets/view-dashboard.svg" alt="Dahsboard Icon" /> Dashboard
+        <div class="logo-text">
+          <img class="white-svg-icon" src="assets/view-dashboard.svg" alt="Dahsboard Icon">
+          <p>Dashboard</p>
         </div>
-        <div class="menu1">
-          <ul>
-            <li><img class="svg-icon" src="assets/home.svg" alt="Home Icon" /> Home</li>
-            <li><img class="svg-icon" src="assets/card-account-details.svg" alt="Account Icon" /> Profile</li>
-            <li><img class="svg-icon" src="assets/message.svg" alt="Messages Icon" /> Messages</li>
-            <li><img class="svg-icon" src="assets/clock-time-eight.svg" alt="Clock Icon" /> History</li>
-            <li><img class="svg-icon" src="assets/file-tree.svg" alt="Tasks Icon" /> Tasks</li>
-            <li><img class="svg-icon" src="assets/google-circles-communities.svg" alt="Community Icon" /> Communities</li>
-          </ul>
+
+        <div class="spacer"></div>
+
+        <div class="icon-text">
+          <img class="white-svg-icon" src="assets/home.svg" alt="home icon">
+          <p>Home</p>
         </div>
-        <div class="menu2">
-          <ul>
-            <li><img class="svg-icon" src="assets/cog.svg" alt="Settings Icon" /> Settings</li>
-            <li><img class="svg-icon" src="assets/lifebuoy.svg" alt="Support Icon" /> Support</li>
-            <li><img class="svg-icon" src="assets/shield-alert.svg" alt="Privacy Icon" /> Privacy</li>
-          </ul>
+
+        <div class="icon-text">
+          <img class="white-svg-icon" src="assets/card-account-details.svg" alt="profile icon">
+          <p>Profile</p>
         </div>
+
+        <div class="icon-text">
+          <img class="white-svg-icon" src="assets/message.svg" alt="message icon">
+          <p>Messages</p>
+        </div>
+
+        <div class="icon-text">
+          <img class="white-svg-icon" src="assets/clock-time-eight.svg" alt="history icon">  
+          <p>History</p>
+        </div>
+
+        <div class="icon-text">
+          <img class="white-svg-icon" src="assets/file-tree.svg" alt="task icon">
+          <p>Tasks</p>
+        </div>
+
+        <div class="icon-text">
+          <img class="white-svg-icon" src="assets/google-circles-communities.svg" alt="community icon">
+          <p>Community</p>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="icon-text">
+          <img class="white-svg-icon" src="assets/cog.svg" alt="settings icon">
+          <p>Settings</p>
+        </div>
+
+        <div class="icon-text">
+          <img class="white-svg-icon" src="assets/lifebuoy.svg" alt="support icon">
+          <p>Support</p>
+        </div>
+        
+        <div class="icon-text">
+          <img class="white-svg-icon" src="assets/shield-alert.svg" alt="privacy icon">
+          <p>Privacy</p>
+        </div>         
       </div>
       <div class="main">
         <div class="bars">
           <div class="topbar">
-            <div class="search"><img class="svg-icon" src="assets/search-web.svg" alt="Search Icon" /><input type="text"></div>
+            <div class="icon-text"><img class="svg-icon" src="assets/search-web.svg" alt="Search Icon" /><input type="text"></div>
             <div class="menu">
-              <img class="big-svg-icon" src="assets/bell-ring.svg" alt="Bell Icon" />
+              <img class="svg-icon" src="assets/bell-ring.svg" alt="Bell Icon" />
               <img class="profile-icon" src="assets/profile.jpg" alt="Profile Image" />
               <p>Morgan Manan</p>
             </div>
           </div>
           <div class="welcomebar">
-            <div class="profile-image">PLC</div>
-            <div class="message">Hi there, USERNAME (@USERNAME)</div>
+            <div class="welcome-message">
+              <div class="profile-image"><img class="profile-icon" src="assets/profile.jpg" alt="Profile Image" /></div>
+              <div class="message">
+                <p class="small-text">Hi there,</p>
+                <p class="large-text">Morgan Manan (@morganmanan)</p>
+              </div>
+            </div>
             <div class="menu">
               <button type="button">New</button>
               <button type="button">Upload</button>
@@ -53,61 +88,94 @@
         </div>
         <div class="contect-container">
           <div class="projects">
-            <h1>Your Projects</h1> 
+            <div class="super-title">Your Projects</div> 
             <div class="card">
-              <p class="title">Super Cool Project</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-              <button type="button">1</button>
-              <button type="button">2</button>
-              <button type="button">3</button>
+              <div class="card-line"></div>
+              <div class="card-content">
+                <p class="title">Super Cool Project</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+              </div>
+              <div class="card-buttons">
+                <button type="button"><img class="svg-icon" src="assets/star-plus-outline.svg" alt="Star Icon" /></button>
+                <button type="button"><img class="svg-icon" src="assets/eye-plus-outline.svg" alt="Eye Icon" /></button>
+                <button type="button"><img class="svg-icon" src="assets/share-variant.svg" alt="Share Icon" /></button>
+              </div>
             </div>
             <div class="card">
-              <p class="title">Less Cool Project</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-              <button type="button">1</button>
-              <button type="button">2</button>
-              <button type="button">3</button>
+              <div class="card-line"></div>
+              <div class="card-content">
+                <p class="title">Less Cool Project</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+              </div>
+              <div class="card-buttons">
+                <button type="button"><img class="svg-icon" src="assets/star-plus-outline.svg" alt="Star Icon" /></button>
+                <button type="button"><img class="svg-icon" src="assets/eye-plus-outline.svg" alt="Eye Icon" /></button>
+                <button type="button"><img class="svg-icon" src="assets/share-variant.svg" alt="Share Icon" /></button>
+              </div>
             </div>
             <div class="card">
-              <p class="title">Impossible App</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-              <button type="button">1</button>
-              <button type="button">2</button>
-              <button type="button">3</button>
+              <div class="card-line"></div>
+              <div class="card-content">
+                <p class="title">Impossible App</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+              </div>
+              <div class="card-buttons">
+                <button type="button"><img class="svg-icon" src="assets/star-plus-outline.svg" alt="Star Icon" /></button>
+                <button type="button"><img class="svg-icon" src="assets/eye-plus-outline.svg" alt="Eye Icon" /></button>
+                <button type="button"><img class="svg-icon" src="assets/share-variant.svg" alt="Share Icon" /></button>
+              </div>
             </div>
             <div class="card">
-              <p class="title">Easy Peasy App</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-              <button type="button">1</button>
-              <button type="button">2</button>
-              <button type="button">3</button>
+              <div class="card-line"></div>
+              <div class="card-content">
+                <p class="title">Easy Peasy App</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+              </div>
+              <div class="card-buttons">
+                <button type="button"><img class="svg-icon" src="assets/star-plus-outline.svg" alt="Star Icon" /></button>
+                <button type="button"><img class="svg-icon" src="assets/eye-plus-outline.svg" alt="Eye Icon" /></button>
+                <button type="button"><img class="svg-icon" src="assets/share-variant.svg" alt="Share Icon" /></button>
+              </div>
             </div>
             <div class="card">
-              <p class="title">Ad Blocker</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-              <button type="button">1</button>
-              <button type="button">2</button>
-              <button type="button">3</button>
+              <div class="card-line"></div>
+              <div class="card-content">
+                <p class="title">Ad Blocker</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+              </div>
+              <div class="card-buttons">
+                <button type="button"><img class="svg-icon" src="assets/star-plus-outline.svg" alt="Star Icon" /></button>
+                <button type="button"><img class="svg-icon" src="assets/eye-plus-outline.svg" alt="Eye Icon" /></button>
+                <button type="button"><img class="svg-icon" src="assets/share-variant.svg" alt="Share Icon" /></button>
+              </div>
             </div>
             <div class="card">
-              <p class="title">Money Maker</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-              <button type="button">1</button>
-              <button type="button">2</button>
-              <button type="button">3</button>
+              <div class="card-line"></div>
+              <div class="card-content">
+                <p class="title">Money Maker</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+              </div>
+              <div class="card-buttons">
+                <button type="button"><img class="svg-icon" src="assets/star-plus-outline.svg" alt="Star Icon" /></button>
+                <button type="button"><img class="svg-icon" src="assets/eye-plus-outline.svg" alt="Eye Icon" /></button>
+                <button type="button"><img class="svg-icon" src="assets/share-variant.svg" alt="Share Icon" /></button>
+              </div>
             </div>
           </div>
+
           <div class="announcements">
-            <h1>Announcements</h1>
+            <div class="super-title">Announcements</div>
             <div class="an-container">
               <div class="an-card">
                 <p class="title">Site Maintenance</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
               </div>
+              <div class="line"></div>
               <div class="an-card">
                 <p class="title">Community Share Day</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
               </div>
+              <div class="line"></div>
               <div class="an-card">
                 <p class="title">Updated Privacy Policy</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
@@ -115,21 +183,25 @@
             </div>
           </div>
           <div class="trending">
-            <h1>Trending</h1>
-            <div class="an-container">
+            <div class="super-title">Trending</div>
+            <div class="trending-container">
               <div class="tr-card">
+                <div class="tr-card-image"><img class="profile-icon" src="assets/profile5.jpg" alt="Profile Image" /></div>
                 <p class="at">@tegan</p>
                 <p>World Peace Builder</p>
               </div>
               <div class="tr-card">
+                <div class="tr-card-image"><img class="profile-icon" src="assets/profile2.jpg" alt="Profile Image" /></div>
                 <p class="at">@morgan</p>
                 <p>Super Cool Project</p>
               </div>            
               <div class="tr-card">
+                <div class="tr-card-image"><img class="profile-icon" src="assets/profile3.jpg" alt="Profile Image" /></div>
                 <p class="at">@kendall</p>
                 <p>Life Changing App</p>
               </div>
               <div class="tr-card">
+                <div class="tr-card-image"><img class="profile-icon" src="assets/profile4.jpg" alt="Profile Image" /></div>
                 <p class="at">@alex</p>
                 <p>No Traffic Maker</p>
               </div>
