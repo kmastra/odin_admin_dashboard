@@ -27,6 +27,9 @@ ul, ol {
   font-weight: bold;
   align-items: center;
   gap: 20px;
+  text-align: start;
+  padding: 2rem;
+  justify-content: start;
 }
 
 .topbar {
@@ -68,4 +71,35 @@ ul, ol {
 .contect-container .projects .trending {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
+}
+
+.svg-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.big-svg-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.profile-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+input {
+  background-color: lightslategray;
+  border-radius: 10px;
+  height: 25px;
+  width: 600px;
+}
+
+li,
+.super {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
