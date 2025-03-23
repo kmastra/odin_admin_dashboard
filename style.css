@@ -8,15 +8,17 @@ ul, ol {
 }
 
 .container {
+  height: 100vh;
   font-size: 32px;
   font-family: Helvetica;
+  text-align: center;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr 3fr 3fr;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 7fr;
 }
 
 .sidebar {
-  grid-area: 1 / 1 / 5 / 1;
+  grid-area: 1 / 1 / 4 / 2;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   background-color: lightskyblue;
@@ -27,3 +29,43 @@ ul, ol {
   gap: 20px;
 }
 
+.topbar {
+  grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.topbar .menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.welcomebar {
+  grid-area: 2 / 2 / 3 / 3;
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+}
+
+.contect-container {
+  grid-area: 3 / 2 / 4 / 3;
+  display: grid;
+  grid-template-columns: 4fr 4fr 3fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.contect-container .projects {
+  grid-area: 1 / 1 / 3 / 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.contect-container .projects .announcements {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.contect-container .projects .trending {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
